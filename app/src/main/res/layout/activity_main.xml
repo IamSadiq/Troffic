@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="troffic.mest.troffic.Main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="FARE COST: "
+        android:textSize="25sp"
+        android:padding="20sp"
+        android:background="@android:color/holo_blue_dark"
+        android:id="@+id/tv"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/source"
+            android:contentDescription="source"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/source"
+            android:popupTheme="@android:color/holo_orange_light"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/tv"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+        </Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/destination"
+            android:contentDescription="destination"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/destination"
+            android:popupTheme="@android:color/holo_orange_light"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/source"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+        </Spinner>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:id="@+id/list_item"
+        android:layout_below="@+id/destination"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>

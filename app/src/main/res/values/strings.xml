@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Troffic</string>
+    <string name="source">where i am</string>
+    <string name="destination">where i\'m going</string>
+</resources>
